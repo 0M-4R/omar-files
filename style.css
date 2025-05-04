@@ -333,6 +333,76 @@ footer a:hover {
 .contact {
     background-color: #f7f7f7; /* Light gray */
 }
+/* Hero Section Gradient */
+.hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* A smooth purple-blue gradient */
+}
+
+/* Example gradient for the About Section */
+.about {
+    background: linear-gradient(45deg, #ff6b6b, #f7b7a3); /* Gradient pinkish tone */
+}
+/* Box shadow for project cards */
+.project-card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Box shadow for profile image */
+.profile-pic {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Box shadow for sections */
+.section {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+/* Light Blue for Buttons */
+button {
+    background-color: #4caf50; /* A fresh green color */
+    color: white;
+}
+
+/* Add soft color to contact links */
+.contact-list a {
+    color: #4285F4; /* Blue color */
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    color: #34a853; /* Green color on hover */
+}
+/* Add border and padding to sections */
+.about, .experience, .skills, .projects {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+/* Modern font for headings */
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif; /* Example of a modern sans-serif font */
+}
+
+/* Body text font */
+body {
+    font-family: 'Arial', sans-serif; /* Simple, readable font */
+}
+/* Increase section padding */
+.about, .contact, .projects, .experience {
+    padding: 40px 20px;
+}
+/* Example for buttons */
+button:hover {
+    background-color: #005f00; /* Darker green on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Larger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 
 img {
