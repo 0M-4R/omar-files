@@ -1,5 +1,4 @@
-/* Reset & base */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,14 +52,28 @@
     margin-bottom: 30px;
   }
   
-  .hero-image {
+  .google-button {
+    background-color: #ffffff;
+    color: #2c5364;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-button:hover {
+    background-color: #dce3e9;
+  }
+  
+  .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border: 4px solid white;
+    margin-bottom: 20px;
+    border: 4px solid #ffffff;
   }
   
   
@@ -71,18 +84,6 @@
     margin: auto;
     text-align: center;
   }
-
-  .about-text {
-    max-width: 800px;
-    margin: auto;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-  
-  .about-text p {
-    margin-bottom: 1rem;
-  } 
   
   /* Footer */
   footer {
@@ -172,49 +173,45 @@
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
-}
-
-
-
-    .experience {
-        padding: 60px 20px;
-        background-color: #ffffff;
-        text-align: left;
-        max-width: 900px;
-        margin: auto;
-      }
-      
-      .experience h2 {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-      
-      .job {
-        margin-bottom: 2rem;
-        border-left: 4px solid #4285f4;
-        padding-left: 1rem;
-      }
-      
-      .job h3 {
-        margin-bottom: 0.3rem;
-        color: #333;
-      }
-      
-      .job p {
-        margin: 0 0 0.5rem;
-        color: #666;
-        font-size: 0.95rem;
-      }
-      
-      .job ul {
-        padding-left: 1.2rem;
-      }
-      
-      .job ul li {
-        margin-bottom: 0.4rem;
-        color: #444;
-      }
-      
+  }
+  .experience {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .experience h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .job {
+    margin-bottom: 2rem;
+    border-left: 4px solid #4285f4;
+    padding-left: 1rem;
+  }
+  
+  .job h3 {
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  .job p {
+    margin: 0 0 0.5rem;
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  .job ul {
+    padding-left: 1.2rem;
+  }
+  
+  .job ul li {
+    margin-bottom: 0.4rem;
+    color: #444;
+  }
   .certifications {
     padding: 60px 20px;
     background-color: #f7f9fc;
@@ -306,48 +303,9 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-}
 
     .section-title {
         text-align: center;
         font-size: 2em;
         margin-bottom: 20px;
       }
-/* Styles for screens that are smaller than 768px (tablets and mobile devices) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-
-  .navbar {
-    flex-direction: column; /* Stack navbar items vertically on smaller screens */
-    text-align: center; /* Center navbar links */
-  }
-
-  .hero h2 {
-    font-size: 2rem; /* Adjust font size for mobile */
-  }
-
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for mobile */
-  }
-
-  .about-text {
-    padding: 0 1rem; /* Add padding for better spacing */
-  }
-
-  /* Ensure profile image fits nicely on mobile */
-  .profile-pic {
-    width: 120px;
-    height: auto;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
-}
-/* Ensure images are responsive */
-img {
-  max-width: 100%; /* Prevent images from exceeding their container's width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-      
