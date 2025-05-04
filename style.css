@@ -322,6 +322,29 @@ img {
   margin: 0;
 }
 
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Adjust this value to move it up or down */
+  right: 20px; /* Adjust this value to move it left or right */
+  background-color: #0073e6; /* Background color */
+  color: white; /* Text color */
+  padding: 15px;
+  font-size: 24px; /* Increase font size */
+  border-radius: 50%; /* Makes it circular */
+  text-align: center;
+  display: none; /* Hidden by default, will show when scrolling down */
+  cursor: pointer;
+  z-index: 1000; /* Ensures it appears above other content */
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.back-to-top:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+
 /* =========================
    Footer
 ========================= */
