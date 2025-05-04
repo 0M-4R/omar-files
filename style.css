@@ -309,6 +309,32 @@ footer a:hover {
   }
 }
 
+/* Add background color to the About Section */
+.about {
+    background-color: #f4f4f9; /* Light grey background */
+}
+
+/* Add background color to the Experience Section */
+.experience {
+    background-color: #e0e0e0; /* Light grey */
+}
+
+/* Add background color to the Skills Section */
+.skills {
+    background-color: #f8f8f8; /* Slightly off-white */
+}
+
+/* Add background color to the Projects Section */
+.projects {
+    background-color: #ffffff; /* Keep it white, but it will stand out with the others */
+}
+
+/* Add background color to the Contact Section */
+.contact {
+    background-color: #f7f7f7; /* Light gray */
+}
+
+
 img {
   max-width: 100%;
   height: auto;
