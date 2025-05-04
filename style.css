@@ -67,6 +67,34 @@ img {
   margin-bottom: 30px;
 }
 
+/* Hero Image Styles */
+.hero-image {
+  width: 150px; /* Default size for desktop */
+  height: 150px; /* Default size for desktop */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures image covers the container */
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 120px; /* Smaller image on mobile */
+    height: 120px; /* Smaller image on mobile */
+  }
+  .hero {
+    padding: 4rem 1rem; /* Reduce padding for mobile */
+  }
+  .hero h2 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+  .hero p {
+    font-size: 1.1rem; /* Adjust text size for mobile */
+    max-width: 90%; /* Make sure text does not crowd on smaller screens */
+  }
+}
 /* =========================
    Reusable Image Style
 ========================= */
