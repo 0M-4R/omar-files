@@ -1,4 +1,6 @@
-/* ========== Global Reset & Base Styles ========== */
+/* =========================
+   Base Styles & Reset
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,14 @@ body {
   color: #333;
 }
 
-/* ========== Navbar ========== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Navbar
+========================= */
 .navbar {
   background-color: #333;
   color: white;
@@ -32,7 +41,9 @@ body {
   text-decoration: underline;
 }
 
-/* ========== Hero Section ========== */
+/* =========================
+   Hero Section
+========================= */
 .hero {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #ffffff;
@@ -56,17 +67,22 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-image {
+/* =========================
+   Reusable Image Style
+========================= */
+.rounded-avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ========== About Section ========== */
+/* =========================
+   About & Contact
+========================= */
 .about, .contact {
   padding: 60px 20px;
   max-width: 800px;
@@ -86,27 +102,9 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ========== Footer ========== */
-footer, .footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-/* ========== Profile Picture ========== */
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 4px solid white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* ========== Skills Section ========== */
+/* =========================
+   Skills Section
+========================= */
 .skills {
   padding: 60px 20px;
   background-color: #fff;
@@ -118,17 +116,6 @@ footer, .footer {
 .skills h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #333;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
-  font-size: 1.1rem;
-}
-
-.skills-list li {
-  margin: 10px 0;
   color: #333;
 }
 
@@ -154,7 +141,9 @@ footer, .footer {
   padding-left: 0.3rem;
 }
 
-/* ========== Projects Section ========== */
+/* =========================
+   Projects
+========================= */
 .projects {
   padding: 60px 20px;
   text-align: center;
@@ -165,6 +154,7 @@ footer, .footer {
   gap: 20px;
   max-width: 800px;
   margin: auto;
+  padding: 1rem;
 }
 
 .project-card {
@@ -175,34 +165,9 @@ footer, .footer {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* ========== Contact Section ========== */
-.contact {
-  padding: 60px 20px;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-}
-
-.contact-list li {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-.contact-list a {
-  color: #4285F4;
-  text-decoration: none;
-}
-
-.contact-list a:hover {
-  text-decoration: underline;
-}
-
-/* ========== Experience Section ========== */
+/* =========================
+   Experience
+========================= */
 .experience {
   padding: 60px 20px;
   background-color: #ffffff;
@@ -242,7 +207,9 @@ footer, .footer {
   color: #444;
 }
 
-/* ========== Certifications Section ========== */
+/* =========================
+   Certifications
+========================= */
 .certifications {
   padding: 60px 20px;
   background-color: #f7f9fc;
@@ -275,7 +242,9 @@ footer, .footer {
   font-size: 0.9rem;
 }
 
-/* ========== Languages Section ========== */
+/* =========================
+   Languages
+========================= */
 .languages {
   padding: 2rem 0;
   background-color: #f9f9f9;
@@ -297,14 +266,36 @@ footer, .footer {
   margin: 0;
 }
 
-/* ========== Section Title ========== */
+/* =========================
+   Footer
+========================= */
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Section Titles
+========================= */
 .section-title {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-/* ========== Responsive Styles (Mobile) ========== */
+/* =========================
+   Responsive Layout
+========================= */
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -315,6 +306,10 @@ footer, .footer {
     text-align: center;
   }
 
+  .hero {
+    padding: 4rem 1rem;
+  }
+
   .hero h2 {
     font-size: 2rem;
   }
@@ -323,7 +318,7 @@ footer, .footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .profile-pic {
+  .rounded-avatar {
     width: 120px;
   }
 
@@ -336,19 +331,7 @@ footer, .footer {
     margin-bottom: 1rem;
   }
 
-  .hero {
-    padding: 4rem 1rem;
-  }
-
-  .about-container,
-  .skills-container,
-  .project-list {
+  .about-container, .skills-container, .project-list {
     padding: 1rem;
   }
-}
-
-/* ========== Responsive Images ========== */
-img {
-  max-width: 100%;
-  height: auto;
 }
