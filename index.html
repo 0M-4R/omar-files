@@ -5,92 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omar Yaich - Personal Profile</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .navbar {
-      background-color: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    .navbar h1 {
-      margin: 0;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: #0073e6;
-      color: white;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .google-button {
-      margin-top: 1rem;
-      display: inline-block;
-      background-color: #fff;
-      color: #0073e6;
-      padding: 0.5rem 1.5rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 2em;
-      margin-top: 3rem;
-    }
-    .about-container, .skills-container, .project-list, .language-list, .contact-list {
-      max-width: 1000px;
-      margin: auto;
-      padding: 1rem;
-    }
-    .about-text p {
-      margin-bottom: 1rem;
-    }
-    .skills-list, .contact-list, .language-list, .skills-container ul {
-      list-style: none;
-      padding: 0;
-    }
-    .skills-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .skill-group ul li {
-      margin-bottom: 0.5rem;
-    }
-    .project-card {
-      background: #fff;
-      padding: 1rem;
-      margin: 1rem 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-  </style>
 </head>
 <body>
 
@@ -98,17 +12,18 @@
     <h1>Omar Yaich</h1>
     <nav>
       <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Professional Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#languages">Languages</a>
-      <a href="#contact">Contact</a>
+      <a href="#experience">Professional Experience</a>
+      <a href="#certifications">Licenses & Certifications</a>
+      <a href="#languages">Languages I Speak</a>
+      <a href="#contact">Contact Me</a>
     </nav>
   </header>
 
   <section class="hero" id="home">
+    <img src="your-photo.jpg" alt="Omar Yaich" class="hero-image" />
     <h2>Hi, I'm Omar Yaich</h2>
     <p>Aspiring developer with a background in accounting & finance, passionate about learning and building.</p>
     <a href="#projects" class="google-button">See My Work</a>
@@ -173,24 +88,41 @@
     </div>
   </section>
 
-  <section class="projects" id="projects">
-    <h2 class="section-title">My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Personal Profile Website</h3>
-        <p>This website — my first step into web development — built with HTML and CSS.</p>
-      </div>
-      <div class="project-card">
-        <h3>Coming Soon</h3>
-        <p>Stay tuned for more projects as I grow and build my portfolio.</p>
-      </div>
+ 
+<section class="experience" id="experience">
+  <h2 class="section-title">Professional Experience</h2>
+  <div class="about-container">
+    <div class="project-card">
+      <h3>Accounts Receivable & Payable Associate – Vista</h3>
+      <p><strong>Period:</strong> [Insert your dates here]</p>
+      <ul>
+        <li>Managed customer invoices and payments to ensure timely collection and accurate reporting.</li>
+        <li>Performed daily bank reconciliations and resolved discrepancies with cross-functional teams.</li>
+        <li>Collaborated with internal departments to streamline billing procedures and reduce outstanding balances.</li>
+      </ul>
     </div>
-  </section>
-
-  <section class="experience" id="experience">
-    <h2 class="section-title">Professional Experience</h2>
-    <!-- Experience entries go here (like Vista, Bosch, etc.) -->
-  </section>
+    
+    <div class="project-card">
+      <h3>Finance Assistant – Bosch Africa</h3>
+      <p><strong>Period:</strong> [Insert your dates here]</p>
+      <ul>
+        <li>Processed supplier invoices, prepared payment proposals, and reconciled vendor statements.</li>
+        <li>Assisted with monthly closing processes and generated financial reports for management review.</li>
+        <li>Supported internal audits by ensuring all documentation and records were accurate and up-to-date.</li>
+      </ul>
+    </div>
+    
+    <div class="project-card">
+      <h3>Accounting Trainee – Happyness Tunisie</h3>
+      <p><strong>Period:</strong> [Insert your dates here]</p>
+      <ul>
+        <li>Assisted in general ledger entries, accounts reconciliation, and invoice tracking.</li>
+        <li>Helped with payroll calculations and statutory tax declarations.</li>
+        <li>Developed a good understanding of local accounting regulations and financial systems.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
   <section class="certifications" id="certifications">
     <h2 class="section-title">Licenses & Certifications</h2>
@@ -207,7 +139,7 @@
   </section>
 
   <section class="languages" id="languages">
-    <h2 class="section-title">Languages</h2>
+    <h2 class="section-title">Languages I Speak</h2>
     <ul class="language-list">
       <li><strong>Arabic:</strong> Native (Mother Tongue)</li>
       <li><strong>English:</strong> Fluent</li>
@@ -215,13 +147,27 @@
     </ul>
   </section>
 
+   <section class="projects" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Personal Profile Website</h3>
+        <p>This website — my first step into web development — built with HTML and CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Coming Soon</h3>
+        <p>Stay tuned for more projects as I grow and build my portfolio.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
     <p>You can reach me by email or connect with me on LinkedIn:</p>
     <ul class="contact-list">
       <li>Email: <a href="mailto:yaich.omar@outlook.fr">yaich.omar@outlook.fr</a></li>
-      <li>GitHub: <a href="#" target="_blank">Coming Soon</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/omaryaich/" target="_blank">linkedin.com/in/omaryaich/</a></li>
+     <li>WhatsApp: <a href="https://wa.me/21625287805" target="_blank">+216 25 287 805</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/omaryaich/" target="_blank" rel="noopener noreferrer">linkedin.com/in/omaryaich/</a></li>
     </ul>
   </section>
 
