@@ -192,12 +192,11 @@
 </script>
 
 <a href="#" class="back-to-top" title="Back to Top">↑</a>
-<script>
-        window.onload = function() {
-            window.scrollTo(0, 0); // Scroll to the top of the page
-        };
-    </script>
-
   
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
 </body>
 </html>
