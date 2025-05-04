@@ -313,4 +313,41 @@
         font-size: 2em;
         margin-bottom: 20px;
       }
+/* Styles for screens that are smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on smaller screens */
+    text-align: center; /* Center navbar links */
+  }
+
+  .hero h2 {
+    font-size: 2rem; /* Adjust font size for mobile */
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for mobile */
+  }
+
+  .about-text {
+    padding: 0 1rem; /* Add padding for better spacing */
+  }
+
+  /* Ensure profile image fits nicely on mobile */
+  .profile-pic {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
+/* Ensure images are responsive */
+img {
+  max-width: 100%; /* Prevent images from exceeding their container's width */
+  height: auto; /* Maintain aspect ratio */
+}
+
       
