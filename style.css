@@ -41,17 +41,29 @@
     justify-content: center;
   }
   
+.hero h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive font size */
+@media screen and (max-width: 768px) {
   .hero h2 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 2rem;
   }
-  
+
   .hero p {
-    font-size: 1.3rem;
-    max-width: 600px;
-    margin-bottom: 30px;
+    font-size: 1rem;
   }
+}
+
   
   .hero-image {
     width: 150px;
