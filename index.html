@@ -261,21 +261,23 @@
       </div>
     </div>
   </section>
-<button onclick="scrollToTop()" id="backToTop" title="Back to top">🔝</button>
+<a href="#" class="back-to-top" title="Back to Top">↑</a>
 <script>
   window.onscroll = function () {
-    const btn = document.getElementById("backToTop");
+    const btn = document.querySelector(".back-to-top");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";
+      btn.style.display = "block";  // Show button
     } else {
-      btn.style.display = "none";
+      btn.style.display = "none";  // Hide button
     }
   };
 
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  document.querySelector(".back-to-top").addEventListener("click", function(e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
+  });
 </script>
+
 
   <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
