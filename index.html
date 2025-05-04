@@ -266,17 +266,19 @@
   window.onscroll = function () {
     const btn = document.querySelector(".back-to-top");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block";  // Show button
+      btn.style.display = "block"; // Show when scrolling down
     } else {
-      btn.style.display = "none";  // Hide button
+      btn.style.display = "none"; // Hide when at the top
     }
   };
 
+  // Smooth scroll to top when the button is clicked
   document.querySelector(".back-to-top").addEventListener("click", function(e) {
-    e.preventDefault(); // Prevent default anchor behavior
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
   });
 </script>
+
 
 
   <section class="contact" id="contact">
