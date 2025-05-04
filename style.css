@@ -50,22 +50,7 @@
     font-size: 1.3rem;
     max-width: 600px;
     margin-bottom: 30px;
-  }
-  
-  .google-button {
-    background-color: #ffffff;
-    color: #2c5364;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .google-button:hover {
-    background-color: #dce3e9;
-  }
+
   
   .hero-image {
   width: 150px;
@@ -84,6 +69,18 @@
     margin: auto;
     text-align: center;
   }
+        }
+  .about-text {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
   
   /* Footer */
   footer {
