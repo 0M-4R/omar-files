@@ -2,45 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Omar Yaich is an accounting and finance professional exploring web development with a passion for learning and building projects.">
-  <meta name="keywords" content="Omar Yaich, accounting, finance, web development, finance professional, developer">
-  <meta name="author" content="Omar Yaich">
-  <title>Omar Yaich - Accounting and Web Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Yaich - Personal Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .navbar {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .navbar h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #0073e6;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .google-button {
+      margin-top: 1rem;
+      display: inline-block;
+      background-color: #fff;
+      color: #0073e6;
+      padding: 0.5rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 3rem;
+    }
+    .about-container, .skills-container, .project-list, .language-list, .contact-list {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .about-text p {
+      margin-bottom: 1rem;
+    }
+    .skills-list, .contact-list, .language-list, .skills-container ul {
+      list-style: none;
+      padding: 0;
+    }
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .skill-group ul li {
+      margin-bottom: 0.5rem;
+    }
+    .project-card {
+      background: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
-
-<script>
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-  </script>
 <body>
 
   <header class="navbar">
     <h1>Omar Yaich</h1>
     <nav>
       <a href="#home">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#skills">Professional Skills</a>
-      <a href="#experience">Professional Experience</a>
-      <a href="#certifications">Licenses & Certifications</a>
-      <a href="#languages">Languages I Speak</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact Me</Menu></a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero" id="home">
-    <img src="your-photo.jpg" alt="Omar Yaich" class="hero-image" />
     <h2>Hi, I'm Omar Yaich</h2>
-    <p>Accounting and finance professional exploring web development out of a lifelong curiosity and love for learning.</p>
+    <p>Aspiring developer with a background in accounting & finance, passionate about learning and building.</p>
+    <a href="#projects" class="google-button">See My Work</a>
   </section>
 
   <section class="about-me" id="about">
     <h2 class="section-title">About Me</h2>
     <div class="about-container">
       <div class="about-text">
-        <p>I’m a finance professional with experience in Accounts Receivable and Payable at companies such as Vista, Robert Bosch Africa, and Happyness Tunisie. I’ve managed high-value portfolios, improved cash flow processes, and worked cross-functionally to ensure financial accuracy and compliance.</p>
+        <p>I’m a finance professional with experience in Accounts Receivable and Payable at global companies like Vista, Bosch Africa, and Happyness Tunisie. I’ve managed high-value portfolios, improved cash flow processes, and worked cross-functionally to ensure financial accuracy and compliance.</p>
         <p>I value clarity, consistency, and communication — both in finance and teamwork. I’m fluent in English and Arabic, and I’m currently learning French. I’ve also started exploring web development, and this site is a product of that journey.</p>
         <p>This profile reflects both my professional experience and my commitment to learning and growth.</p>
       </div>
@@ -93,139 +171,26 @@
         </ul>
       </div>
     </div>
-
-    <section class="experience" id="experience">
-        <h2>Professional Experience</h2>
-      
-        <!-- Vista -->
-        <div class="job">
-          <h3>Accounts Receivable Coordinator – Vista</h3>
-          <p><strong>Jan 2024 – Present</strong> | Tunis, Tunisia (Remote)</p>
-          <ul>
-            <li>Collaborating with customers and sales staff to resolve payment issues and discrepancies.</li>
-            <li>Proactively communicating account statements to customers and sales staff.</li>
-            <li>Creating and distributing timely overdue payment reminders to customers.</li>
-            <li>Verifying and recording all entries from various bank accounts and PayPal into the general ledger.</li>
-          </ul>
-        </div>
-      
-        <!-- Bosch Africa -->
-        <div class="job">
-          <h3>Accounts Receivable Responsible – Bosch Africa</h3>
-          <p><strong>Sep 2021 – Jan 2024</strong> | Miqreen, Tunisia (Hybrid)</p>
-          <ul>
-            <li>Managed a $1M accounts receivable portfolio with accurate invoicing, processing, and reconciliation.</li>
-            <li>Achieved 70% on-time payments by resolving delays with customers and collectors.</li>
-            <li>Streamlined data entry and payment processes, increasing accuracy by 25% and improving weekly reviews.</li>
-            <li>Collaborated with collectors to address discrepancies, boosting cash flow and lowering risk.</li>
-            <li>Conducted annual inventory counts, monitored withholding tax declarations, and reconciled related GL accounts.</li>
-            <li>Proactively communicated account statements to customers and sales staff for transparency.</li>
-            <li>Sent timely overdue payment reminders to improve cash flow.</li>
-            <li>Implemented detective control procedures for credit limit releases based on credit history and financial checks.</li>
-          </ul>
-        </div>
-      
-        <!-- Happyness Tunisie -->
-        <div class="job">
-          <h3>Accounts Payable Responsible – Happyness Tunisie</h3>
-          <p><strong>Nov 2020 – Aug 2021</strong> | Tunisia (On-site)</p>
-          <ul>
-            <li>Managed end-to-end accounts payable: collecting and organizing invoices, verifying due dates, and handling payments.</li>
-            <li>Applied withholding tax rates and issued accurate payments.</li>
-            <li>Reconciled daily bank statements, verified all transactions, and resolved discrepancies and payment rejections.</li>
-            <li>Maintained payment schedules to ensure timely, consistent payments and good supplier relations.</li>
-            <li>Used Microsoft Excel, Word, Microsoft Dynamics ERP, and Sage 100 ERP for accurate financial tracking.</li>
-            <li>Worked in a collaborative team environment and communicated effectively with stakeholders.</li>
-          </ul>
-        </div>
-      </section>
-      
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Personal Profile Website</h3>
+        <p>This website — my first step into web development — built with HTML and CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Coming Soon</h3>
+        <p>Stay tuned for more projects as I grow and build my portfolio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <!-- Experience entries go here (like Vista, Bosch, etc.) -->
+  </section>
 
   <section class="certifications" id="certifications">
     <h2 class="section-title">Licenses & Certifications</h2>
@@ -242,7 +207,7 @@
   </section>
 
   <section class="languages" id="languages">
-    <h2 class="section-title">Languages I Speak</h2>
+    <h2 class="section-title">Languages</h2>
     <ul class="language-list">
       <li><strong>Arabic:</strong> Native (Mother Tongue)</li>
       <li><strong>English:</strong> Fluent</li>
@@ -250,46 +215,13 @@
     </ul>
   </section>
 
-  <section class="projects" id="projects">
-    <h2 class="section-title">My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Personal Profile Website</h3>
-        <p>This website — my first step into web development — built with HTML and CSS.</p>
-      </div>
-      <div class="project-card">
-        <h3>Coming Soon</h3>
-        <p>Stay tuned for more projects as I grow and build my portfolio.</p>
-      </div>
-    </div>
-  </section>
-<a href="#" class="back-to-top" title="Back to Top">↑</a>
-<script>
-  window.onscroll = function () {
-    const btn = document.querySelector(".back-to-top");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      btn.style.display = "block"; // Show when scrolling down
-    } else {
-      btn.style.display = "none"; // Hide when at the top
-    }
-  };
-
-  // Smooth scroll to top when the button is clicked
-  document.querySelector(".back-to-top").addEventListener("click", function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
-  });
-</script>
-
-
-
   <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
-    <p>You can contact me via email, WhatsApp, or connect with me on LinkedIn:</p>
+    <p>You can reach me by email or connect with me on LinkedIn:</p>
     <ul class="contact-list">
       <li>Email: <a href="mailto:yaich.omar@outlook.fr">yaich.omar@outlook.fr</a></li>
-      <li>WhatsApp: <a href="https://wa.me/21625287805" target="_blank">+216 25 287 805</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/omaryaich/" target="_blank" rel="noopener noreferrer">linkedin.com/in/omaryaich/</a></li>
+      <li>GitHub: <a href="#" target="_blank">Coming Soon</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/omaryaich/" target="_blank">linkedin.com/in/omaryaich/</a></li>
     </ul>
   </section>
 
