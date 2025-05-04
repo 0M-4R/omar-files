@@ -341,3 +341,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Add space around titles on smaller screens */
+@media (max-width: 768px) {
+  /* Adjust margin for section titles */
+  .section-title {
+    margin-top: 2rem; /* Add more space on top */
+    margin-bottom: 1rem; /* Add space below the title */
+  }
+
+  /* Adjust padding for the hero section */
+  .hero {
+    padding: 4rem 1rem; /* Reduce horizontal padding to avoid crowding */
+  }
+
+  /* Adjust other sections if needed */
+  .about-container, .skills-container, .project-list {
+    padding: 1rem; /* Add padding around sections */
+  }
+}
+
