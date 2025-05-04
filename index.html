@@ -174,12 +174,30 @@
     <p>&copy; 2025 Omar Yaich. All rights reserved.</p>
   </footer>
 
+  <script>
+  window.onscroll = function () {
+    const btn = document.querySelector(".back-to-top");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block"; // Show when scrolling down
+    } else {
+      btn.style.display = "none"; // Hide when at the top
+    }
+  };
+
+  // Smooth scroll to top when the button is clicked
+  document.querySelector(".back-to-top").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top smoothly
+  });
+</script>
+
+<a href="#" class="back-to-top" title="Back to Top">↑</a>
 <script>
         window.onload = function() {
             window.scrollTo(0, 0); // Scroll to the top of the page
         };
     </script>
 
-  <a href="#" class="back-to-top" title="Back to Top">↑</a>
+  
 </body>
 </html>
