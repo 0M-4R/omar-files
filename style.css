@@ -350,22 +350,32 @@ img {
   height: auto; /* Maintain aspect ratio */
 }
 
+/* Back to Top Button */
 .back-to-top {
   position: fixed;
-  bottom: 20px; /* Adjust this value to move it up or down */
-  right: 20px; /* Adjust this value to move it left or right */
-  background-color: #0073e6; /* Background color */
-  color: white; /* Text color */
-  padding: 15px;
-  font-size: 24px; /* Increase font size */
-  border-radius: 50%; /* Makes it circular */
-  text-align: center;
-  display: none; /* Hidden by default, will show when scrolling down */
+  bottom: 20px; /* Adjust the bottom distance */
+  right: 20px; /* Adjust the right distance */
+  width: 50px; /* Adjust the size */
+  height: 50px; /* Same as width to make it a perfect circle */
+  background-color: #0073e6; /* Match this to your hero background color */
+  color: white;
+  border-radius: 50%; /* Make the button round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  z-index: 1000; /* Ensures it appears above other content */
-  transition: background-color 0.3s; /* Smooth color transition on hover */
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .back-to-top:hover {
-  background-color: #005bb5; /* Darker blue on hover */
+  opacity: 1;
+  transform: scale(1.1);
 }
+
+.back-to-top:active {
+  transform: scale(0.95);
+}
+
