@@ -330,7 +330,7 @@ img {
   right: 20px; /* Adjust the right distance */
   width: 50px; /* Adjust the size */
   height: 50px; /* Same as width to make it a perfect circle */
-  background-color: #0073e6; /* Match this to your hero background color */
+  background-color: #0f2027; /* Match this to your hero background color */
   color: white;
   border-radius: 50%; /* Make the button round */
   display: flex;
