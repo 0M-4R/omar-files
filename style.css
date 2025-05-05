@@ -329,16 +329,6 @@ img {
   list-style: none; /* This removes the bullets */
 }
 
-/* =========================
-   General Section Title Styles
-========================= */
-h2 {
-  font-size: 2rem; /* Ensure consistent size for all h2 titles */
-  font-weight: bold;
-  margin-bottom: 20px; /* Adjust spacing as needed */
-  color: #333; /* Match text color */
-  text-align: center; /* Make sure it's centered if that's the design */
-}
 
 /* Back to Top Button */
 .back-to-top {
@@ -397,6 +387,21 @@ footer {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
+}
+
+/* =========================
+   General Section Title Styles
+========================= */
+h2 {
+  font-size: 2rem; /* Ensure consistent size for all h2 titles */
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+  color: #333; /* Match text color */
+  text-align: center; /* Make sure it's centered if that's the design */
+}
+
+.hero h2, .hero p {
+  color: white; /* Ensure the hero text stays white */
 }
 
 /* =========================
