@@ -166,7 +166,7 @@ img {
   background-color: #fff;
   max-width: 1000px;
   margin: auto;
-  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -231,7 +231,7 @@ img {
   text-align: left;
   max-width: 900px;
   margin: auto;
-  margin-bottom: 30px; /* Adds space below the experience section */
+  margin-top: 30px; /* Adds space below the experience section */
 }
 
 .experience h2 {
