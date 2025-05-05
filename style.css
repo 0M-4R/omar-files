@@ -336,11 +336,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Adjust the font size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   opacity: 0.9;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  text-align: center; /* Ensures text stays centered */
 }
 
 .back-to-top:hover {
@@ -351,6 +352,7 @@ img {
 .back-to-top:active {
   transform: scale(0.95);
 }
+
 
 
 /* =========================
